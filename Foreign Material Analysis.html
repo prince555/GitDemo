@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreign Material Analysis</title>
+
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Styles  -->
+    <link rel="shortcut icon" href="assets/img/kxp_fav.png" type="image/x-icon">
+    
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+<link rel='stylesheet' href='https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/table.css" />
+<script type="text/javascript" src="assets/js/table.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+    <div class="sidebar close">
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+            <i class='bx bxl-xing'></i>
+            <div class="logo-name">LIMS</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Non Dropdown List Item ------- -->
+            <li>
+                <div class="title">
+                    <a href="index.html" class="link">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="name">Dashboard</span>
+                    </a>
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <div class="submenu">
+                    <a href="index.html" class="link submenu-title">Dashboard</a>
+                    <!-- submenu links here  -->
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-collection'></i>
+                        <span class="name">Intake Docs</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Category</a>
+                    <a href="Chain of Custody.html" class="link">Chain Of Custody</a>
+                    <a href="Sample Intake log.html" class="link">Sample Intake Log</a>
+                    <a href="Sample Tracking Log.html" class="link">Sample Tracking Log</a>
+                </div>
+            </li>
+
+            <!-- -------- Dropdown List Item ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="name">Analysis Forms</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Posts</a>
+                    <a href="Cannabinoids Potency Analysis.html" class="link">Cannabinoids Potency Analysis</a>
+                    <a href="Pesticides and Mycotoxins Analysis.html" class="link">Pesticides and Mycotoxins Analysis</a>
+                    <a href="Water Activity Analysis.html" class="link">Water Activity Analysis</a>
+                    <a href="Heavy Metals Analysis.html" class="link">Heavy Metals Analysis</a>
+                    <a href="RSA Analysis.html" class="link">RSA Analysis</a>
+                    <a href="Micro Analysis.html" class="link">Micro Analysis</a>
+                    <a href="Foreign Material Analysis.html" class="link">Foreign Material Analysis</a>
+                </div>
+            </li>
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <!-- <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-line-chart'></i>
+                        <span class="name">Analytics</span>
+                    </a>
+                  
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Analytics</a>
+                 
+                </div>
+            </li> -->
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <!-- <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-pie-chart-alt-2'></i>
+                        <span class="name">Chart</span>
+                    </a>
+             
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Chart</a>
+   
+                </div>
+            </li> -->
+
+            <!-- -------- Dropdown List Item ------- -->
+            <!-- <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-extension'></i>
+                        <span class="name">Plugins</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Plugins</a>
+                    <a href="#" class="link">UI Face</a>
+                    <a href="#" class="link">Pigments</a>
+                    <a href="#" class="link">Box Icons</a>
+                </div>
+            </li> -->
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <!-- <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-compass'></i>
+                        <span class="name">Explore</span>
+                    </a>
+   
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Explore</a>
+ 
+                </div>
+            </li> -->
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <!-- <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-history'></i>
+                        <span class="name">History</span>
+                    </a>
+
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">History</a>
+            
+                </div>
+            </li> -->
+
+            <!-- -------- Non Dropdown List Item ------- -->
+            <!-- <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-cog'></i>
+                        <span class="name">Settings</span>
+                    </a>
+    
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Settings</a>
+
+                </div>
+            </li> -->
+        </ul>
+    </div>
+
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+    <div>
+        <div class="toggle-sidebar">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <div class="topnav-centered">
+                <a class="active"><b>Foreign Material Analysis</b></a>
+              </div>
+
+        <div class="dropdown-user">
+            
+                <button class="dropbtn"><i class="fa fa-user"></i> User 
+                </button>
+                <div class="dropdown-content">
+                  <!-- <a href="#">Link 1</a>
+                  <a href="#">Link 2</a> -->
+                  <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+                </div>
+        </div>
+    </div>
+
+    <hr style="margin-top: 60px;"></hr>
+
+
+     <div class="" style="margin:10px;width: 100%;">
+      
+       
+   <!-------------Filter Elements--------------------------------------->   
+
+    <form class="search-form" action="">
+    <div class="" style="float: left;">
+      <input class="search-input" type="" id="gsearch" name="gsearch">
+      <label for="gsearch"> : Work Group ID</label><br>
+      <button class="search-input"><i class="fa fa-filter"></i> Filter </button>
+      <button class="search-reset"><i class="fa fa-refresh"></i><a href="" style="color: white;"> Refresh </a></button>
+      </div>
+   
+    </form><br>
+    <!-------------------------------------------------------------------------------->
+    <div>
+
+     <!-------------------------------------------------------------------------------->
+
+     <!-- Buttons For Add New Sample and Download Excel.  -->
+  
+
+
+
+     <form class="search-form" style="border-color: gray;" action="">
+        <div class="" style="float: left;">
+            <label for="gsearch">Analysis Type: </label>          
+          <input class="search-input" style="border-color: gray;" type="" id="gsearch" name="gsearch"><br>
+
+          <label for="gsearch">Date: </label> 
+          <input class="search-input" style="border-color: gray; color: grey;" type="date" id="gsearch" name="gsearch"><br>
+
+          <label for="gsearch"> WG #:</label>             
+          <input class="search-input" style="border-color: gray;" type="" id="gsearch" name="gsearch"><br>
+      
+        </div>
+
+          <div class="" style="float: right;     padding-left: 210px;">
+            <label for="gsearch">Prep:</label>            
+          <input class="search-input" style="border-color: gray;" type="" id="gsearch" name="gsearch"><br>
+          <label for="gsearch">Dilution:</label>            
+          <input class="search-input" style="border-color: gray;" type="" id="gsearch" name="gsearch"><br>
+          <label for="gsearch">Analysis:</label>            
+          <input class="search-input" style="border-color: gray;" type="" id="gsearch" name="gsearch"><br>
+
+          </div>
+
+    
+        </form><br><br><br><br><br><br><br><br><br>
+   <!--  <input class="search-reset" type="submit" value="Add sample"></input>
+      <input class="search-reset" type="submit" value="Download Excel"></input> -->
+
+  <!-------------------------------------------------------------------------------->
+  </div>
+
+  <!--------------------Table Data starts Here-------------------------------------------->
+
+
+
+
+
+
+<table id="example"  style="width:100%">
+    
+<!-- 
+        <thead>
+            <tr>
+                <th >Row No</th>
+                <th >Sample ID</th>
+                <th>Weight (g)</th>
+                <th>Solvent</th>
+                <th>Solvent Vol</th>
+                <th>Batch Number</th>
+                <th>Sample Size</th>
+                <th>Batch Size</th>
+                <th>Spike Volume</th>
+                <th>Notes</th>
+                <th>Analysis Dilution</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td contenteditable="true">1</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">2</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+
+            </tr>
+            <tr>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">4</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">6</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">7</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">8</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">9</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">10</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">11</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">12</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">13</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">14</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">15</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">16</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">17</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">18</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">19</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">20</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">Methanol</td>
+                <td contenteditable="true">1.5</td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">NA</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>LIC</th>
+                <th>Position</th>
+                <th>Total</th>
+                <th>Analysis</th>
+                <th></th>
+                <th>Dilution</th>
+                <th>Analysis</th>
+            </tr>
+        </tfoot> -->
+    </table>
+ <button  class="search-reset" style="background-color: green;"><i class="fa fa-save" ></i><a href="" style="color: white;"> Save Data </a></button>
+    <!------------------------------End of Table Data------------------------------------------>
+</div>
+
+    </section>
+
+
+
+    <!-- Link JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+<script>
+    const container = document.querySelector('#example');
+
+const hot = new Handsontable(container, {
+  data: [
+    ['', 'Tesla', 'Volvo', 'Toyota', 'Ford', 'Tesla', 'Volvo', 'Toyota', 'Ford', 'Tesla', 'Volvo', 'Toyota', 'Ford', 'Tesla', 'Volvo', 'Toyota', 'Ford', 'Tesla', 'Volvo', 'Toyota', 'Ford'],
+    ['2019dddssssssdddddddddddddddddddd', 10, 11, 12, 13],
+    ['2020', 20, 11, 14, 13],
+    ['2021', 30, 15, 12, 13],
+    ['2021', 30, 15, 12, 13],
+    ['2021', 30, 15, 12, 13]
+  ],
+  rowHeaders: true,
+  colHeaders: true,
+  height: 'auto',
+  licenseKey: '' // for non-commercial use only
+});
+</script>
+</html>

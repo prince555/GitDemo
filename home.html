@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Box Icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Styles  -->
+    <link rel="shortcut icon" href="assets/img/kxp_fav.png" type="image/x-icon">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+<link rel='stylesheet' href='https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+    <div class="sidebar ">
+
+        <!-- If you want to by-default open the side-navbar as closed then use the below line.
+        <div class="sidebar close"> -->
+
+
+        <!-- ========== Logo ============  -->
+        <a href="#" class="logo-box">
+            <i class='bx bxl-xing'></i>
+            <div class="logo-name">LIMS</div>
+        </a>
+
+        <!-- ========== List ============  -->
+        <ul class="sidebar-list">
+            <!-- -------- Home List Item ------- -->
+            <li>
+                <div class="title">
+                    <!-- <a href="home.html" class="link">
+                        <i class='bx bx-home'></i>
+                        <span class="name">Home</span>
+                    </a> -->
+                    <!-- <i class='bx bxs-chevron-down'></i> -->
+                </div>
+                <!-- <div class="submenu">
+                    <a href="index.html" class="link submenu-title">Home</a>
+                </div> -->
+            </li>
+
+        <!-------------- Dropdown List  for Intake documents ------- -->
+            <li class="dropdown">
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-collection'></i>
+                        <span class="name">Intake Docs</span>
+                    </a>
+                    <i class='bx bxs-chevron-down'></i>
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">Category</a>
+                    <a href="Chain of Custody.html" class="link">Chain Of Custody</a>
+                    <a href="Sample Intake log.html" class="link">Sample Intake Log</a>
+                    <a href="Sample Intake log.html" class="link">Sample Retain Log</a>
+                    <a href="Sample Tracking Log.html" class="link">Sample Tracking Sheet</a>
+                </div>
+            </li>
+        <!----------------------------------------------------------------->
+
+        <!-------------- Dropdown List  for Cannabinoids Documents ------- -->
+        <li class="dropdown">
+            <div class="title">
+                <a href="#" class="link">
+                    <i class='bx bx-leaf'></i>
+                    <span class="name">Cannabinoids</span>
+                </a>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+            <div class="submenu">
+                <!-- <a href="#" class="link submenu-title">Category</a> -->
+                <a href="#" class="link">Sample Prep Log Sheet</a>
+                <a href="#" class="link">Data Sheet</a>
+                <a href="#" class="link">LQC report</a>
+            </div>
+        </li>
+    <!----------------------------------------------------------------->
+
+    <!-------------- Dropdown List  for Water Activity Documents ------- -->
+        <li class="dropdown">
+            <div class="title">
+                <a href="#" class="link">
+                    <i class='bx bx-water'></i>
+                    <span class="name">Water Activity</span>
+                </a>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+            <div class="submenu">
+                <!-- <a href="#" class="link submenu-title">Category</a> -->
+                <a href="#" class="link">Sample Prep Log Sheet</a>
+                <a href="#" class="link">Data Sheet</a>
+                <a href="#" class="link">LQC report</a>
+            </div>
+        </li>
+    <!----------------------------------------------------------------->    
+
+    <!-------------- Dropdown List  for Micro Documents ------- -->
+        <li class="dropdown">
+            <div class="title">
+                <a href="#" class="link">
+                    <i class='bx bx-search'></i>
+                    <span class="name">Micro</span>
+                </a>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+            <div class="submenu">
+                <!-- <a href="#" class="link submenu-title">Category</a> -->
+                <a href="#" class="link">Sample Prep Log Sheet</a>
+                <a href="#" class="link">Data Sheet</a>
+                <a href="#" class="link">LQC report</a>
+            </div>
+        </li>
+    <!----------------------------------------------------------------->    
+    
+    
+
+    <!-------------- Dropdown List  for Pesticides/Mycotoxins Documents ------- -->
+        <li class="dropdown">
+            <div class="title">
+                <a href="#" class="link">
+                    <i class='bx bx-bug-alt'></i>
+                    <span class="name">Pesticides / Mycotoxins</span>
+                </a>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+            <div class="submenu">
+                <!-- <a href="#" class="link submenu-title">Category</a> -->
+                <a href="#" class="link">Sample Prep Log Sheet</a>
+                <a href="#" class="link">Data Sheet</a>
+                <a href="#" class="link">LQC report</a>
+            </div>
+        </li>
+    <!----------------------------------------------------------------->        
+
+    <!-------------- Dropdown List  for Residual Solvents Documents ------- -->
+        <li class="dropdown">
+            <div class="title">
+                <a href="#" class="link">
+                    <i class='bx bx-test-tube'></i>
+                    <span class="name">Residual Solvents</span>
+                </a>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+            <div class="submenu">
+                <!-- <a href="#" class="link submenu-title">Category</a> -->
+                <a href="#" class="link">Sample Prep Log Sheet</a>
+                <a href="#" class="link">Data Sheet</a>
+                <a href="#" class="link">LQC report</a>
+            </div>
+        </li>
+    <!----------------------------------------------------------------->  
+
+    <!-------------- Dropdown List  for Foreign Material Documents ------- -->
+        <li class="dropdown">
+            <div class="title">
+                <a href="#" class="link">
+                    <i class='bx bx-book-content'></i>
+                    <span class="name">Foreign Material</span>
+                </a>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+            <div class="submenu">
+                <!-- <a href="#" class="link submenu-title">Category</a> -->
+                <a href="#" class="link">Sample Prep Log Sheet</a>
+                <a href="#" class="link">Data Sheet</a>
+                <a href="#" class="link">LQC report</a>
+            </div>
+        </li>
+    <!----------------------------------------------------------------->  
+
+    <!-------------- Dropdown List  for Moisture Content Documents ------- -->
+        <li class="dropdown">
+            <div class="title">
+                <a href="#" class="link">
+                    <i class='bx bx-droplet'></i>
+                    <span class="name">Moisture Content</span>
+                </a>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+            <div class="submenu">
+                <!-- <a href="#" class="link submenu-title">Category</a> -->
+                <a href="#" class="link">Sample Prep Log Sheet</a>
+                <a href="#" class="link">Data Sheet</a>
+                <a href="#" class="link">LQC report</a>
+            </div>
+        </li>
+    <!----------------------------------------------------------------->  
+
+    <!-------------- Dropdown List  for Heavy Metals Documents ------- -->
+        <li class="dropdown">
+            <div class="title">
+                <a href="#" class="link">
+                    <i class='bx bx-microchip'></i>
+                    <span class="name">Heavy Metals</span>
+                </a>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+            <div class="submenu">
+                <!-- <a href="#" class="link submenu-title">Category</a> -->
+                <a href="#" class="link">Sample Prep Log Sheet</a>
+                <a href="#" class="link">Data Sheet</a>
+                <a href="#" class="link">LQC report</a>
+            </div>
+        </li>
+    <!-----------------------------------------------------------------> 
+    
+    <!--------------List  for COA ------------------------------------>
+            <li>
+                <div class="title">
+                    <a href="#" class="link">
+                        <i class='bx bx-line-chart'></i>
+                        <span class="name">COA</span>
+                    </a>
+                  
+                </div>
+                <div class="submenu">
+                    <a href="#" class="link submenu-title">COA</a>
+                 
+                </div>
+            </li>
+    <!-----------------------------------------------------------------> 
+
+        </ul>
+    </div>
+
+    <!-- ============= Home Section =============== -->
+    <section class="home">
+    <div>
+        <div class="toggle-sidebar">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <div class="topnav-centered">
+                <a class="active"><b>Home</b></a>
+              </div>
+
+        <div class="dropdown-user">
+            
+                <button class="dropbtn"><i class="fa fa-user"></i> User
+                </button>
+                <div class="dropdown-content">
+                  <!-- <a href="#">Link 1</a>
+                  <a href="#">Link 2</a> -->
+                  <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+                </div>
+        </div>
+    </div>
+
+    <hr style="margin-top: 60px;"></hr>
+
+
+    <div style="margin: 5%;">
+        <br><br><br>
+  <h4 style="text-align: center;">You have Successfully Logged In. Welcome to LIMS Portal.</h4>
+  <div style="text-align: center">
+  <img style="width: 8%; margin-top: 20px; " src="assets/img/smile2.png">
+</div>
+<!-- <div style="padding-top: 1000px;">
+  <div class="smily">
+    <div class="eyes"></div>
+    <div class="smile"></div>
+  </div>
+  </div>
+</div> -->
+
+
+
+
+
+  <!-- <hr> -->
+  <!-- <div class="row">
+
+    <div class="col-sm-4 dashboardbox column1 text-center" style="background-color:pink;">
+        <a href="Chain of Custody Form.html"><p>Chain of Custody Form</p></a>
+    </div>
+
+    <div class="col-sm-4 dashboardbox" style="background-color:yellow;">
+        <a href="Cannabinoids Potency Analysis.html"><p>Cannabinoids Potency Analysis</p></a>
+    </div>
+    <div class="col-sm-4 dashboardbox column2" style="background-color:yellow;">
+        <a href="Water Activity Analysis.html"><p>Water Activity Analysis</p></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 dashboardbox column1" style="background-color:pink;">
+        <a href="Sample Intake Form.html"><p>Sample Intake Form</p></a>
+    </div>
+    <div class="col-sm-4 dashboardbox" style="background-color:yellow;">
+        <a href="Foreign Material Analysis.html"><p>Foreign Material Analysis</p></a>
+    </div>
+    <div class="col-sm-4 dashboardbox column2" style="background-color:yellow;">
+        <a href="Heavy Metals Analysis.html"><p>Heavy Metals Analysis</p></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 dashboardbox column1" style="background-color:pink;">
+        <a href="Sample Tracking Form.html"><p>Sample Tracking Form.html</p></a>
+    </div>
+    <div class="col-sm-4 dashboardbox" style="background-color:yellow;">
+        <a href="Micro Analysis.html"><p>Micro Analysis</p></a>
+    </div>
+    <div class="col-sm-4 dashboardbox column2" style="background-color:yellow;">
+        <a href="RSA Analysis.html"><p>RSA Analysis</p></a>
+    </div>
+  </div>
+</div> -->
+   
+     </div>
+       
+   
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
